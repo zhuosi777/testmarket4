@@ -1,8 +1,124 @@
 -# メインページのヘッダー部分
 %header.main-header
-  aaaaaaaaaaaaaaa
+  ヘッダーかり
 
-%main.show-contents
-  .show-contents-box
-    %h.show-contents-box__item-name
-      iPhone8  純正 イヤホン、充電器セット
+-# 商品詳細ページ機能
+.product-details-wrapper
+  .container
+    = form_with url: "#", method: :post , class: 'item-box' do
+      %h1.item-box__name
+        アイテム名
+      %p.item-box__detail 
+      .item-main
+        .item-photo
+          .photo-big
+          .photo-smallbox
+        %table.item-detail
+          %tr
+            %th.category 出品者
+            %td
+              = link_to "",  class:"name" do
+                ユーザー名
+              .user-rating
+                .item-user-ratings
+                  %i.fas.fa-laugh 
+                    %span.text 20
+                .item-user-ratings
+                  %i.fas.fa-meh
+                    %span.text 0
+                .item-user-ratings
+                  %i.fas.fa-frown
+                    %span.text 0
+            %tr
+              %th.category カテゴリー
+              %td
+                .item-detail-table-sub-category
+                  = link_to "#",  class:"name" do
+                    カテゴリー名
+                %i.fa.fa-chevron-right.items-link_to
+                  = link_to "#",  class:"name" do
+                    カテゴリー名
+                .item-detail-table-sub-sub-category
+                %i.fa.fa-chevron-right.items-link_to
+                  = link_to "#",  class:"name" do
+                    カテゴリー名
+            %tr
+              %th.category ブランド
+              %td
+                = link_to "#",  class:"name" do
+                  ブランド名
+
+            %tr
+              %th.category 商品のサイズ
+              %td 
+                商品サイズ
+              
+            %tr
+              %th.category 商品の状態
+              %td 
+                商品状態
+              
+            %tr
+              %th.category 配送料の負担
+              %td 
+                配送料の負担
+            %tr
+              %th.category 配送の方法
+              %td 
+                配送方法
+              
+            %tr
+              %th.category 発送元地域
+              %td
+                = link_to "#",  class:"name" do
+                  配送地域
+              
+            %tr
+              %th.category 発送日の目安
+
+
+              %td
+                発送日の目安
+
+
+
+      .price-box
+        %span.price-box__price
+          ¥500円
+        %span.price-box__tax
+          (税込)
+        %span.price-box__fee
+          送料込み
+          = link_to "", class: "item-buy-btn" do
+            購入画面に進む
+
+      .item-description
+        %p.item-description__inner
+          出品者のコメント（商品説明詳細）
+          
+      .button-content
+        .button-content__left
+          .button-like
+            %i.far.fa-heart
+            = link_to "#", class: "button-like__text" do
+              いいね！ 0
+          .button-report
+            %i.far.fa-flag
+            = link_to "#", class: "button-report__text" do
+              不適切な商品の報告
+        
+        = link_to "#", class: "button-content__right" do
+          %i.fas.fa-lock
+            あんしんあんぜんへの取り組み
+
+
+
+
+    .detail
+    %ul.nav-link
+    .social-box
+    .user-box
+    .nav-bread
+    .app-banner
+      
+    .footer
