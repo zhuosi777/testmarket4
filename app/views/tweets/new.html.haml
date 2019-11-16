@@ -1,6 +1,4 @@
--# メインページのヘッダー部分
-%header.main-header
-  ヘッダーかり
+= render 'shared/main_header'
 
 -# 商品詳細ページ機能
 .product-details-wrapper
@@ -13,6 +11,7 @@
         .item-photo
           .photo-big
           .photo-smallbox
+            .photo-small-item
         %table.item-detail
           %tr
             %th.category 出品者
@@ -55,7 +54,7 @@
               
             %tr
               %th.category 商品の状態
-              %td 
+              %td
                 商品状態
               
             %tr
@@ -79,8 +78,6 @@
 
               %td
                 発送日の目安
-
-
 
       .price-box
         %span.price-box__price
@@ -111,14 +108,113 @@
           %i.fas.fa-lock
             あんしんあんぜんへの取り組み
 
+  .item-comment-message
+    .item-comment-message__box
+      %form.message-content-form
+        %p 
+        相手のことを考え丁寧なコメントを心がけましょう。不快な言葉遣いなどは利用制限や退会処分となることがあります。
+        .message-content-form-box
+      %input.message-content-form-box__text
+        .message-submit
+          .message-submit__btn-gray
+            コメントする
 
 
+    .product-show-messeagecontent
+      .product-show-itemlink
+        = link_to "" ,class: "product-show-messagelink" do
+          < ユーザー１のページへ移動
+    
+      .product-show-itemlink
+        = link_to "" ,class: "product-show-messagelink" do
+          ユーザー２のページへ移動 >
 
-    .detail
-    %ul.nav-link
-    .social-box
-    .user-box
-    .nav-bread
-    .app-banner
+    .product-show-sns-box
+      = link_to "", class: "product-show-facebook" do
+        %i.fab.fa-facebook-square
+          .product-show-facebook-icon
+
+      = link_to "", class: "product-show-twitter" do
+        %i.fab.fa-twitter-square
+          .product-show-twitter-icon
+
+      = link_to "", class: "product-show-pinterest" do
+        %i.fab.fa-pinterest-square 
+        .product-show-pinterest-icon
+    
+    .product-show-boxposition
+      .product-show-items-box
+        .product-show-items-name
+          = link_to "", class: "product-show-text-link" do
+            お客Aさんのその他の出品
+
+          .product-show-items
+            .product-show-items-list
+              .product-show-items-list__box
+                = link_to "", class: "show-product-link" do
+                  .product-show-item-box-photo
+                  .product-show-item-box-body
+                    .product-show-item-box-body-name
+                      aaaaaaaaa
+                      .product-show-item-box-body-price
+                        ¥600
+
+            .product-show-items-list
+              .product-show-items-list__box
+                = link_to "", class: "show-product-link" do
+                  .product-show-item-box-photo
+                  .product-show-item-box-body
+                    .product-show-item-box-body-name
+                      aaaaaaaaa
+                      .product-show-item-box-body-price
+                        ¥600
+
+            .product-show-items-list
+              .product-show-items-list__box
+                = link_to "", class: "show-product-link" do
+                  .product-show-item-box-photo
+                  .product-show-item-box-body
+                    .product-show-item-box-body-name
+                      aaaaaaaaa
+                      .product-show-item-box-body-price
+                        ¥600
       
-    .footer
+        .product-show-boxposition
+        .product-show-items-box
+          .product-show-items-name
+            = link_to "", class: "product-show-text-link" do
+              バッテリー/充電器 （家電・スマホ・カメラ） その他の商品
+          
+          .product-show-items
+            .product-show-items-list
+              .product-show-items-list__box
+                = link_to "", class: "show-product-link" do
+                  .product-show-item-box-photo
+                  .product-show-item-box-body
+                    .product-show-item-box-body-name
+                      aaaaaaaaa
+                      .product-show-item-box-body-price
+                        ¥600
+
+            .product-show-items-list
+              .product-show-items-list__box
+                = link_to "", class: "show-product-link" do
+                  .product-show-item-box-photo
+                  .product-show-item-box-body
+                    .product-show-item-box-body-name
+                      aaaaaaaaa
+                      .product-show-item-box-body-price
+                        ¥600
+
+            .product-show-items-list
+              .product-show-items-list__box
+                = link_to "", class: "show-product-link" do
+                  .product-show-item-box-photo
+                  .product-show-item-box-body
+                    .product-show-item-box-body-name
+                      aaaaaaaaa
+                      .product-show-item-box-body-price
+                        ¥600
+
+= render 'shared/announcement'
+= render 'shared/main_footer'
