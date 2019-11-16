@@ -1,4 +1,6 @@
 @import "config/reset";
+@import "config/_color";
+@import "config/_setting";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "config/reset";
@@ -7,3 +9,6 @@
 @import "modules/new.scss";
 @import "modules/sub_header.scss";
 @import "modules/sub_footer.scss";
+@import "modules/_header.scss";
+@import "modules/_main_footer.scss";
+@import "modules/_announcement.scss"
